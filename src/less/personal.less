@@ -1,0 +1,202 @@
+body{
+    background: #eeeeee;
+}
+.ui-header{
+    height: auto;
+    &>span{
+        color: #fff;
+    }
+    background: -webkit-gradient(linear,center top,center bottom,from(#4598fb), to(#4292fc));
+}
+.ui-person-photo{
+    width: 10rem;
+    height: 5.022222rem;
+    overflow: hidden;
+    background: -webkit-gradient(linear,center top,center bottom,from(#4292fc),to(#3578ff));
+    &>span.ui-name{
+        width: 10rem;
+        line-height: .8rem;
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        [data-dpr="2"] & {
+            font-size: 32px
+        }
+        [data-dpr="3"] & {
+            font-size: 48px;
+        }
+    }
+    &>span.ui-intergration{
+        margin-top: .088889rem;
+        line-height: .391111rem;
+        display: inline-block;
+        width: 10rem;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        [data-dpr="2"] & {
+            font-size: 28px;
+        }
+        [data-dpr="3"] & {
+            font-size: 42px;
+        }
+        &>a{
+            color: #fff;
+            text-decoration: none;
+            border:1px solid #fff;
+            margin-left: .213333rem;
+            padding:.061111rem .2195556rem;
+            border-radius: 90px;
+              font-size: 12px;
+        [data-dpr="2"] & {
+            font-size: 24px;
+              border:2px solid #fff;
+        }
+        [data-dpr="3"] & {
+            font-size: 36px;
+              border:3px solid #fff;
+        }
+        }
+    }
+}
+.ui-photo-wrap{
+    width: 1.804444rem;
+    height: 1.804444rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .355556rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:.088889rem solid rgba(249,249,249,.5);
+}
+.ui-photo-blur{
+    width: 1.626667rem;
+    height: 1.626667rem;
+    border:.088889rem solid #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    &>img{
+        width: 1.448889rem;
+        height: 1.448889rem;
+        border-radius: 50%;
+    }
+}
+.ui-person-list{
+    // 
+    width: 9.511111rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.013333rem;
+    padding-bottom: .711111rem;
+    display: flex;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+    [data-dpr="2"] & {
+        border-radius: 24px;
+    -webkit-border-radius:24px;
+    -moz-border-radius:24px;
+    -ms-border-radius:24px;
+    -o-border-radius:24px;
+    }
+    [data-dpr="3"] & {
+        border-radius: 36px;
+    -webkit-border-radius:36px;
+    -moz-border-radius:36px;
+    -ms-border-radius:36px;
+    -o-border-radius:36px;
+    }
+}
+
+dl{
+    width: 1.511111rem;
+    height: 1.457778rem;
+    text-align: center;
+    margin-top: .711111rem;
+    margin-bottom: .16rem;
+    margin-left: .829650rem;
+    margin-right: .829650rem;
+    dt{
+        width: 1.511111rem;
+        height: .906667rem;
+        line-height: .906667rem;
+        img{
+            vertical-align: bottom;
+        }
+    }
+    dd{
+        width: 1.511111rem;
+        height: .657778rem;
+        line-height: .857778rem;
+        color: #272727;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        [data-dpr="2"] & {
+            font-size: 24px;
+        }
+        [data-dpr="3"] &  {
+            font-size: 36px;
+        }
+    }
+    
+}
+a{
+   text-decoration: none;
+     &:nth-of-type(1){
+           dl>dt>img{
+                width: .711111rem;
+                height: .737778rem;
+           }
+       }
+       &:nth-of-type(2){
+           dl>dt>img{
+                width: .684444rem;
+                height: .72rem;
+           }
+       }
+       &:nth-of-type(3){
+           dl>dt>img{
+                width: .746667rem;
+                height: .702222rem;
+           }
+       }
+        &:nth-of-type(4){
+           dl>dt>img{
+                width: .755556rem;
+                height: .72rem;
+           }
+       }
+        &:nth-of-type(5){
+           dl>dt>img{
+                width: .773333rem;
+                height: .773333rem;
+           }
+       }
+       &:nth-of-type(6){
+           dl>dt>img{
+                width: .773333rem;
+                height: .924444rem;
+           }
+       }
+        &:nth-of-type(7){
+           dl>dt>img{
+                width: .746667rem;
+                height: .746667rem;
+                vertical-align: top;
+           }
+       }
+       &:nth-of-type(8){
+           dl>dt>img{
+                width: .657778rem;
+                height: .782222rem;
+                vertical-align: top;
+           }
+       }
+}

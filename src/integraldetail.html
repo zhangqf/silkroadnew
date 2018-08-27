@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>integraldetail</title>
+    <script src="./common/flexible.debug.js"></script>
+    <script src="./common/flexible_css.js"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/integraldetail.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="ui-header">
+            <a href="" class="header-left">
+                <img src="./image/backimg.png" alt="">
+            </a>
+            <span>积分明细</span>
+            <!-- <a href="" class="header-right"><img src="./image/headerimg.png" alt=""></a> -->
+        </div>
+    </div>
+
+    <div class="ui-container">
+        <div class="ui-list">
+            <span class="active">积分生成记录</span>
+            <span>积分消费记录</span>
+        </div>
+        <div class="ui-menu-content">
+            <ul class="ui-create">
+                <li>
+                    <span class="left">2018/08/15</span>
+                    <span class="right active">+2000积分</span>
+                </li>
+                <li>
+                    <span class="left">2018/08/15</span>
+                    <span class="right ">+2000积分</span>
+                    <div class="ui-show">
+                        <div class="ui-showhidden">
+                            <span class="ui-date">2018/08/15 09:00</span>
+                            <span class="ui-state">交易成功</span>
+                            <span class="ui-recharge">充值积分</span>
+                            <span class="ui-amount">2000积分</span>
+                            <span class="ui-term">积分失效时间：2022/08/16</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class=" ui-create ui-consume">
+                <li>
+                    <span class="left">2018/08/15</span>
+                    <span class="right active">+2000积分</span>
+                </li>
+                <li>
+                    <span class="left">2018/08/15</span>
+                    <span class="right ">+2000积分</span>
+                    <div class="ui-show">
+                        <div class="ui-showhidden">
+                            <span class="ui-date">2018/08/15 09:00</span>
+                            <span class="ui-state">交易成功</span>
+                            <span class="ui-recharge">充值积分</span>
+                            <span class="ui-amount">2000积分</span>
+                            <span class="ui-term">积分失效时间：2022/08/16</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <span class="left">2018/08/15</span>
+                    <span class="right active">+2000积分</span>
+                </li>
+                <li>
+                    <span class="left">2018/08/15</span>
+                    <span class="right ">+2000积分</span>
+                    <div class="ui-show">
+                        <div class="ui-showhidden">
+                            <span class="ui-date">2018/08/15 09:00</span>
+                            <span class="ui-state">交易成功</span>
+                            <span class="ui-recharge">充值积分</span>
+                            <span class="ui-amount">2000积分</span>
+                            <span class="ui-term">积分失效时间：2022/08/16</span>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./common/jquery-1.11.0.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script>
+        console.log($(window).height());
+        console.log($(document).height());
+        console.log($(window).width());
+        console.log($(document.body).height());
+        console.log($(document.body).outerHeight(true));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>registerverification</title>
+    <script src="./common/flexible.js"></script>
+    <script src="./common/flexible_css.js"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/registerverification.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="ui-header">
+            <a href="" class="header-left">
+                <img src="./image/backimg.png" alt="">
+            </a>
+            <!-- <span>1</span><span>2</span><span>3</span>
+        <a href="" class="header-right"><img src="./image/headerimg.png" alt=""></a> -->
+        </div>
+    </div>
+
+    <div class="ui-container">
+        <h4>输入验证码</h4>
+        <h2>领取新人礼包</h2>
+        <div class="ui-waitverification">
+            已发送到手机186xxxxxxxxxx
+            <!-- <span class="ui-resend"><a href="">重新发送</a></span> -->
+            <span class="ui-resend">等（<i>60s</i>）后再次发送</span>
+        </div>
+        <div class="ui-inputverification">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+    </div>
+    <script src="./common/jquery-1.11.0.js"></script>
+    <script>
+        $(".ui-inputverification input").on("focus", function() {
+            console.log($(this).val().length)
+            $(this).on("keyup", function() {
+                if ($(this).val().length != 0) {
+                    $(this).next("input").focus()
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
