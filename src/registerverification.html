@@ -39,9 +39,9 @@
     </div>
     <script src="./common/jquery-1.11.0.js"></script>
     <script>
-        $(".ui-inputverification input").on("focus", function() {
-            // console.log($(this).val().length)
-            $(this).on("keyup", function(e) {
+        // $(".ui-inputverification input").on("focus", function() {
+        //     // console.log($(this).val().length)
+        $(".ui-inputverification input").on("keyup", function(e) {
                 if ($(this).val().length != 0) {
                     $(this).next("input").focus()
                 }
@@ -49,7 +49,7 @@
                     $(this).prev("input").focus()
                 }
             })
-        })
+            // })
     </script>
 </body>
 
