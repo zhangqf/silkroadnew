@@ -23,6 +23,10 @@ body {
 }
 .ui-menu-content {
   margin-top: .284444rem;
+  overflow: scroll;
+  height: 12.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 ul.ui-create > li {
   width: 10rem;
