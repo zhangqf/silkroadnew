@@ -11,6 +11,7 @@ html,
 body {
   height: 100%;
   font-family: "苹方";
+  overflow: hidden;
 }
 .header {
   height: 1.173333rem;
@@ -53,7 +54,7 @@ body {
   vertical-align: middle;
 }
 .ui-container {
-  height: 14.75rem;
+  height: 14.808889rem;
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: .32rem;
