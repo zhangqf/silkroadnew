@@ -50,6 +50,14 @@
                 }
             })
             // })
+
+        $('input[type="text"],textarea').on('click', function() {
+            var target = this;
+            setTimeout(function() {
+                target.scrollIntoViewIfNeeded();
+                console.log('scrollIntoViewIfNeeded');
+            }, 400);
+        });
     </script>
 </body>
 
