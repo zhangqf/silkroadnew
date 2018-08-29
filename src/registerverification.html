@@ -55,9 +55,17 @@
             var target = this;
             setTimeout(function() {
                 target.scrollIntoViewIfNeeded();
-                console.log('scrollIntoViewIfNeeded');
+                // console.log('scrollIntoViewIfNeeded');
             }, 400);
+            $("body").css({
+                "background": "none"
+            });
         });
+        $('input[type="text"],textarea').on("blur", function() {
+            $("body").css({
+                "background": "url('.. / image / registerbg.png' ) no-repeat bottom;"
+            });
+        })
     </script>
 </body>
 
