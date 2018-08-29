@@ -37,6 +37,9 @@
             <input type="text" maxlength="1">
         </div>
     </div>
+    <div class="footer" id="footer">
+
+    </div>
     <script src="./common/jquery-1.11.0.js"></script>
     <script>
         // $(".ui-inputverification input").on("focus", function() {
@@ -61,11 +64,14 @@
             //     "background": "none"
             // });
         });
-        // $('input[type="text"],textarea').on("blur", function() {
-        //     $("body").css({
-        //         "background": "url('.. / image / registerbg.png' ) no-repeat bottom;"
-        //     });
-        // })
+        var oHeight = $(document).height(); //浏览器当前的高度 
+        $(window).resize(function() {
+            if ($(document).height() < oHeight) {
+                $("#footer").css("position", "static");
+            } else {
+                $("#footer").css("position", "absolute");
+            }
+        });
     </script>
 </body>
 
