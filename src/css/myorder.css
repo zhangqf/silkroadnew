@@ -8,6 +8,10 @@ body {
   background: #eeeeee;
 }
 .ui-list {
+  width: 10rem;
+  position: fixed;
+  top: 1.173333rem;
+  left: 0;
   background: #fff;
   line-height: 1.066667rem;
   display: flex;
@@ -28,6 +32,7 @@ body {
 }
 .ui-menu-content {
   margin-top: .284444rem;
+  padding-top: 1.066667rem;
   overflow: scroll;
   min-height: 100%;
   overflow-x: hidden;
